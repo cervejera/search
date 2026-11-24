@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230e0e0e'/%3E%3Ccircle cx='8' cy='8' r='3' fill='%233ecf8e'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@400;500&family=Reddit+Sans:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <main class="busca">
+
+        <h1 class="saudacao"><span class="ponto-atual" title="ao vivo"></span><span id="saudacao">olá</span></h1>
+
+        <div class="terminal">
+            <form class="term-linha" id="termForm" autocomplete="off">
+                <label class="prompt" for="termEntrada"><span class="prompt-user">cervejera@search</span> <span class="prompt-sep">~ $</span></label>
+                <input id="termEntrada" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" placeholder="pesquisar no google · ajuda">
+                <kbd class="tecla" title="tecle /, Enter ou espaço para focar o terminal">/</kbd>
+            </form>
+            <div class="term-menu" id="termMenu">
+                <div class="term-saida" id="termSaida" aria-live="polite"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/search.js" defer></script>
+</body>
+
+</html>
