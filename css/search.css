@@ -247,6 +247,15 @@ button {
     }
 }
 
+/* iOS (Safari) dá zoom na página ao focar um campo com fonte menor que 16px:
+   em tela de toque, o terminal sobe para 16px e o zoom não acontece */
+@media (max-width: 600px), (pointer: coarse) {
+    .term-linha,
+    #termEntrada {
+        font-size: 16px;
+    }
+}
+
 /* quem prefere menos movimento */
 @media (prefers-reduced-motion: reduce) {
     *,
